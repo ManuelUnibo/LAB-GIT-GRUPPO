@@ -9,23 +9,25 @@ public class ComplexNumber {
     }
 
     public double getImaginary() {
-        return 0;
+        return this.imaginary;
     }
 
     public double getReal() {
-        return 0;
+        return this.real;
     }
     
     public ComplexNumber plus(final ComplexNumber other) {
-        return null;
+        return new ComplexNumber(this.real + other.real, this.imaginary + other.imaginary);
     }
     
     public ComplexNumber sub(final ComplexNumber other) {
-        return null;
+        return new ComplexNumber(this.real - other.real, this.imaginary - other.imaginary);
     }
 
     public ComplexNumber times(final ComplexNumber other) {
-        return null;
+        final double realPart = this.real * other.real - this.imaginary * other.imaginary;
+        final double imaginaryPart = this.real * other.imaginary + this.imaginary * other.real;
+        return new ComplexNumber(realPart, imaginaryPart);
     }
 
     public ComplexNumber div(final ComplexNumber other) {
