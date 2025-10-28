@@ -9,7 +9,7 @@ public class ComplexNumber {
     }
 
     public double getImaginary() {
-        return 0;
+        return this.imaginary;
     }
 
     public double getReal() {
