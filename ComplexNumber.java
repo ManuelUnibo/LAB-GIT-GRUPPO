@@ -25,7 +25,9 @@ public class ComplexNumber {
     }
 
     public ComplexNumber times(final ComplexNumber other) {
-        return null;
+        final double realPart = this.real * other.real - this.imaginary * other.imaginary;
+        final double imaginaryPart = this.real * other.imaginary + this.imaginary * other.real;
+        return new ComplexNumber(realPart, imaginaryPart);
     }
 
     public ComplexNumber div(final ComplexNumber other) {
