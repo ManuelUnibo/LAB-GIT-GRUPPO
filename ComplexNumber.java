@@ -38,6 +38,8 @@ public class ComplexNumber {
     public static void main(String[] args) {
         ComplexNumber complexNumber = new ComplexNumber(4, 8);
         System.out.println(complexNumber.getReal() + " + " + complexNumber.getImaginary() + "i");
+        System.out.println("test somma: " + complexNumber.plus(new ComplexNumber(10, 4)));
+        System.out.println("test sottrazione: " + complexNumber.sub(new ComplexNumber(5, 2)));
     }
 }
 
