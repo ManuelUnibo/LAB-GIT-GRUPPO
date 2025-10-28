@@ -37,6 +37,12 @@ public class ComplexNumber {
         return new ComplexNumber(realNumerator / commonDenominator, imaginaryNumerator / commonDenominator);
     }
 
+    @Override
+    public String toString() {
+        return real + " + " + imaginary + "i";
+    }
+
+
     public static void main(String[] args) {
         ComplexNumber complexNumber = new ComplexNumber(4, 8);
         System.out.println(complexNumber.getReal() + " + " + complexNumber.getImaginary() + "i");
