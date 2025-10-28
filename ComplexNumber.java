@@ -21,7 +21,7 @@ public class ComplexNumber {
     }
     
     public ComplexNumber sub(final ComplexNumber other) {
-        return null;
+        return new ComplexNumber(this.real - other.real, this.imaginary - other.imaginary);
     }
 
     public ComplexNumber times(final ComplexNumber other) {
