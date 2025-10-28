@@ -39,7 +39,7 @@ public class ComplexNumber {
 
     @Override
     public String toString() {
-        return real + " + " + imaginary + "i";
+        return this.real + " + " + this.imaginary + "i";
     }
 
 
@@ -55,4 +55,3 @@ public class ComplexNumber {
         System.out.println("test divisione: (4+2i) / (2+1i) = " + divResult.getReal() + " + " + divResult.getImaginary() + "i");
     }
 }
-
