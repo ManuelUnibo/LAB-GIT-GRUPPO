@@ -42,6 +42,11 @@ public class ComplexNumber {
         System.out.println(complexNumber.getReal() + " + " + complexNumber.getImaginary() + "i");
         System.out.println("test somma: " + complexNumber.plus(new ComplexNumber(10, 4)));
         System.out.println("test sottrazione: " + complexNumber.sub(new ComplexNumber(5, 2)));
+        
+        ComplexNumber c1 = new ComplexNumber(4, 2);
+        ComplexNumber c2 = new ComplexNumber(2, 1);
+        ComplexNumber divResult = c1.div(c2);
+        System.out.println("test divisione: (4+2i) / (2+1i) = " + divResult.getReal() + " + " + divResult.getImaginary() + "i");
     }
 }
 
